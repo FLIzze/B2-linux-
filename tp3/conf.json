@@ -1,0 +1,12 @@
+{
+	"saves": [
+		"/home/abel/Documents/to_save.txt",
+		"/home/abel/Documents/cat_image.jpg",
+		"/home/abel/Documents/to_save2.txt",
+		"/home/abel/Documents/test2"
+	],
+	"dest": "/home/abel/Documents",
+	"nmb_backup": 3,
+	"_comment": "time_gap in hours",
+	"time_gap": 10
+}

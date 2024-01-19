@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  conteneur_php:
+    image: php:8.2-apache
+    volumes:
+      - ./src:/var/www/html 
+    ports:
+      - "8000:80"
+  conteneur_mysql:
+    image: mysql
+    environment: 
+      MYSQL_DATABASE: users
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: ratio
+  conteneur_phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - "8001:80"
+    environment:
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      PMA_HOST: conteneur_mysql
+      PMA_PORT: 3306
+
